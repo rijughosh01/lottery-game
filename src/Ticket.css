@@ -1,0 +1,12 @@
+.Ticket {
+    border: 1px solid #3ca1db;
+    border-radius: 14px;
+    width: 300px;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px rgba(216, 96, 96, 0.1);
+    transition: transform 0.2s;
+}
+
+.Ticket:hover {
+    transform: scale(1.05);
+}

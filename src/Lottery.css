@@ -1,0 +1,84 @@
+.ticket {
+  border: 1px solid #41a6ce;
+  border-radius: 14px;
+}
+button {
+    background-color: #41a6ce;
+    color: rgb(241, 238, 238);
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: relative;
+    top: 10px;
+    right: 21px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:active {
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%;
+  animation: rainbow 3s ease infinite;
+  transform: scale(0.95);
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+button:hover {
+    background-color: #357a9e;
+}
+
+.tickets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.ticket-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.lottery h1 {
+  font-size: 2.5rem;
+  color: #41a6ce;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.big-prize {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff6b6b;
+  color: white;
+  padding: 20px 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: bounce 1s infinite;
+  z-index: 1000;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
