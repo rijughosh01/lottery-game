@@ -5,6 +5,7 @@
     padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
+    margin-left: 35px;
     transition: transform 0.2s, box-shadow 0.2s;
   }
   
